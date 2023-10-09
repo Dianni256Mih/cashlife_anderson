@@ -15,7 +15,7 @@ const connection = mysql.createPool({
 });
 
 const getAllPessoas = async () =>{
-    const [query] = await conection.execute('select * from usuario')
+    const [query] = await connection.execute('select * from usuario')
     return query
 }
 
